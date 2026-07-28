@@ -150,7 +150,7 @@ export async function enrichNotifications(
   // re-fetched on every poll cycle. The cached subject is applied onto the
   // freshly-fetched notification so read-state and ordering stay current.
   const liveKeys = new Set<string>();
-  const result: RawGitifyNotification[] = new Array(notifications.length);
+  const result: RawGitifyNotification[] = [];
   const misses: RawGitifyNotification[] = [];
   const missIndexes: number[] = [];
 
